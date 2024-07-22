@@ -1,4 +1,4 @@
-# Lab 2 - Create a virtual machine in the portal (20 mins)
+# Lab 2 - Create a confidential virtual machine in the portal (20 mins)
 
 In this lab, you will create a Confidential Virtual Machine (CVM) in the Azure Portal and verify its successful creation. 
 

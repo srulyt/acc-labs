@@ -22,7 +22,7 @@ In this task we will setup a new Azure Keyvault Managed HSM.
 1. Now you can create the Managed HSM with the CLI. Replace `<alias>` with your alias.
 
 ``` CLI
-    az keyvault create --hsm-name "<alias>-MHSM" --resource-group "acc-labs" --location "eastus" --administrators $oid --retention-days 7
+    az keyvault create --hsm-name "<alias>-MHSM" --resource-group "<alias>-rg" --location "eastus" --administrators $oid --retention-days 7
 ```
 
 1. Wait for the keyvault to be provisioned
@@ -49,10 +49,18 @@ __Note__ In real life you would do this on a trusted workstation and not in the 
 
 ## Task 3: Add yourself a crpto role
 
-1. Using the portal, grant yourself the **Managed HSM Crypto Officer** role.
+1. Using the portal, navigate to the newly created MHSM
+1. Click on the **Local RBAC** under the **Settings** section. 
+1. Click **Add**
+1. **Role:** **Managed HSM Crypto User**
+1. **Scope:** **All Keys ("/ or /keys")"
+1. **Security Principal:** Select your user
+1. Click **Create**
+
+![Virtual machine basic details](img/vm-basics.png)
 
 ## Task 4: Explore creating new keys
 
-** Navigate to the **Keys** page in the portal and explore key creation options.
+** Navigate to the **Keys** blade under the **Settings** sectionin the portal and explore key creation options.
 
 ## Task 5: Delete the keyvault

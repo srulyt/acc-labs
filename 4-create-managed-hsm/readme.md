@@ -57,7 +57,7 @@ __Note__ In real life you would do this on a trusted workstation and not in the 
 1. **Security Principal:** Select your user
 1. Click **Create**
 
-![Virtual machine basic details](img/vm-basics.png)
+![add role](img/add-role.png)
 
 ## Task 4: Explore creating new keys
 

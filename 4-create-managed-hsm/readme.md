@@ -64,3 +64,10 @@ __Note__ In real life you would do this on a trusted workstation and not in the 
 ** Navigate to the **Keys** blade under the **Settings** sectionin the portal and explore key creation options.
 
 ## Task 5: Delete the keyvault
+
+1. Delete the entire resource group
+1. Wait for the resource group to be deleted
+1. Purge the deleted keyvault using Cloud Shell. Replace your `<subscription id>` and `<alias>`
+```CLI 
+    az keyvault purge --subscription <your subscription id> --hsm-name <alias>-MHSM --location eastus
+```
